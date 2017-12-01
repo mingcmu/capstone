@@ -1,0 +1,46 @@
+﻿<AssessmentOrderRequest xmlns="http://ns.hr-xml.org/2007-04-15">
+    <ClientId idOwner="Select International">
+        <IdValue name="ClientCode">{{ClientCode}}</IdValue>
+    </ClientId>
+    <PackageId idOwner="Select International">
+        <IdValue name="RequisitionID">{{RequisitionId}}</IdValue>
+        <IdValue name="BillingCode"></IdValue>
+        <IdValue name="OrderID"></IdValue>
+        <IdValue name="AssessmentResultsURL">{{CallBackUri}}</IdValue>
+    </PackageId>
+    <ProviderId idOwner="Select International">
+        <IdValue name="ProviderKey">{{ProviderKey}}</IdValue>
+    </ProviderId>
+    <ClientOrderId idOwner="Integration Client/Partner name">
+        <IdValue name="CustomerNumber">{{CustomerNumber}}</IdValue>
+    </ClientOrderId>
+    <AssessmentRequester>{{Requestor}}</AssessmentRequester>
+    <AssessmentSubject>
+        <SubjectId idOwner="IntegrationPartner">
+            <IdValue name="CandidateNumber">{{EmployeeNumber}}</IdValue>
+        </SubjectId>
+        <PersonName>
+            <LegalName>{{LastName}}</LegalName>
+            <GivenName>{{FirstName}}</GivenName>
+        </PersonName>
+        <ContactMethod>
+            <InternetEmailAddress>{{CandidateEmail}}</InternetEmailAddress>
+        </ContactMethod>
+        <AssessmentPersonDescriptors>
+            <LegalIdentifiers>
+                <MilitaryStatus></MilitaryStatus>
+            </LegalIdentifiers>
+            <DemographicDescriptors>
+                <Race></Race>
+            </DemographicDescriptors>
+            <BiologicalDescriptors>
+                <GenderCode></GenderCode>
+                <DisabilityInfo></DisabilityInfo>
+            </BiologicalDescriptors>
+        </AssessmentPersonDescriptors>
+    </AssessmentSubject>
+    <AdditionalFields>
+        <IdValue name="PayGrade">ABC</IdValue>
+        <IdValue name="Function">123</IdValue> 
+    </AdditionalFields>
+</AssessmentOrderRequest>

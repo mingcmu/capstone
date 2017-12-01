@@ -1,0 +1,138 @@
+﻿@using Inspinia_MVC5_SeedProject.Controllers
+
+@{
+    ViewBag.Title = "Participant";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center m-t-lg">
+                <!--img src="http://www.selectinternational.com/hs-fs/hub/120635/file-2192480007-png/select_int_images/logo.png?t=1507753599247&width=358&name=logo.png" alt="Logo"-->
+                <h1 style="padding-bottom: 30px">
+                    @ViewData["SubTitle"]
+                </h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-4">
+            <h2>Test list</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
+                </li>
+                <li class="active">
+                    <strong>Test list</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    
+
+    
+    
+    <div class="row">
+        <div class="wrapper wrapper-content animated fadeInUp" style="padding-left: 0;padding-right:0">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>All tests assigned to this account</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="project-list">
+
+                        <table class="table table-hover">
+                            <tbody>
+                            <tr>
+                                <td class="project-status">
+                                    <span class="label label-default">Unactive</span>
+                                </td>
+                                <td class="project-title">
+                                    <a target="_blank" href="https://leetcode.com/problems/hamming-distance/description/">Software Engineer, Entry-Level Challenge I</a>
+                                    <br />
+                                    <small>Created 14.08.2017</small>
+                                </td>
+                                <td class="project-completion">
+                                    <small>Completed</small>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 100%;" class="progress-bar"></div>
+                                    </div>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="project-status">
+                                    <span class="label label-primary">Active</span>
+                                </td>
+                                <td class="project-title">
+                                    <a target="_blank" href="@Url.Action("ProjectDetail", "AppViews")">Software Engineer, Entry-Level Challenge II</a>
+                                    <br />
+                                    <small>Created 14.08.2017</small>
+                                </td>
+                                <td class="project-completion">
+                                    <small>In progress</small>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 50%;" class="progress-bar"></div>
+                                    </div>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="project-status">
+                                    <span class="label label-primary">Active</span>
+                                </td>
+                                <td class="project-title">
+                                    <a target="_blank" href="https://www.16personalities.com/free-personality-test">Software Engineer, Behavioral Test I</a>
+                                    <br />
+                                    <small>Created 14.08.2017</small>
+                                </td>
+                                <td class="project-completion">
+                                    <small>Not started</small>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 0%;" class="progress-bar"></div>
+                                    </div>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="project-status">
+                                    <span class="label label-primary">Active</span>
+                                </td>
+                                <td class="project-title">
+                                    <a href="@Url.Action("ProjectDetail", "AppViews")">Software Engineer, Behavioral Test II</a>
+                                    <br />
+                                    <small>Created 14.08.2017</small>
+                                </td>
+                                <td class="project-completion">
+                                    <small>Not started</small>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 0%;" class="progress-bar"></div>
+                                    </div>
+                                </td>
+                                <td class="project-actions">
+                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                </td>
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+    
+</div>

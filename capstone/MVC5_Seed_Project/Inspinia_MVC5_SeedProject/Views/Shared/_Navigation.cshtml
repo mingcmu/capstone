@@ -1,0 +1,44 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <!--img class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnP2H7MPIUS28DSJ-N80ZiRMEDfYFlQCK8HxEvlLADmkLNhhbt" alt="Logo" style="width: 60px"-->
+                            <img src="https://selectcareers.selectrakonline.com/images/client/logo_55.png" alt="Logo" style="width: 120px">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">Welcome <b>Tom</b></strong>
+                            </span>
+                            <span class="text-muted text-xs block">User menu <b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+            <li class="@Html.IsSelected(action: "Index")">
+                <a href="@Url.Action("Index", "Candidate")"><i class="fa fa-laptop"></i> <span class="nav-label">Home</span> </a>
+            </li>
+            <li class="@Html.IsSelected(action: "Client")">
+                <a href="@Url.Action("Create", "Client")"><i class="fa fa-desktop"></i> <span class="nav-label">Client</span></a>
+            </li>
+            <li class="@Html.IsSelected(action: "Registration")">
+                <a href="@Url.Action("Register", "Candidate")"><i class="fa fa-desktop"></i> <span class="nav-label">Registration</span></a>
+            </li>
+            <li class="@Html.IsSelected(action: "Project")">
+                <a href="@Url.Action("Create", "Project")"><i class="fa fa-desktop"></i> <span class="nav-label">Project</span></a>
+            </li>
+            <li class="@Html.IsSelected(action: "Assessment")">
+                <a href="@Url.Action("Create", "Assessment")"><i class="fa fa-desktop"></i> <span class="nav-label">Assessment</span></a>
+            </li>
+            <li class="@Html.IsSelected(action: "TalentList")">
+                <a href="@Url.Action("TalentList", "Home")"><i class="fa fa-desktop"></i> <span class="nav-label">Talent List</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

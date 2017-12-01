@@ -1,0 +1,15 @@
+﻿<AssessmentStatusRequest xmlns="http://ns.hr-xml.org/2007-04-15">
+    <ClientId idOwner="Select International">
+        <IdValue name="ClientCode">{{ClientCode}}</IdValue>
+    </ClientId>
+        <ProviderId idOwner="Select International">
+            <IdValue name="ProviderKey">{{ProviderKey}}</IdValue>
+        </ProviderId>
+    <ClientOrderId idOwner="IntegrationPartner">
+        <IdValue name="CustomerNumber">{{CustomerNumber}}</IdValue>
+    </ClientOrderId>
+    <ReceiptId idOwner="Select International">
+        <IdValue name="ReceiptKey">{{ReceiptKey}}</IdValue>
+    </ReceiptId>
+    <UserArea/>
+</AssessmentStatusRequest>
